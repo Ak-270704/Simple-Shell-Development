@@ -1,27 +1,23 @@
 # Simple-Shell-Development
-Simple Shell in C
+This project is a simple command-line shell implemented in C. It allows users to execute system commands, handle input and output redirection, and run processes in the background. The shell is designed to provide basic functionality similar to a Unix shell, making it a useful project for learning process management and system calls in Linux.
 
-This is a basic command-line shell implemented in C. 
-It supports executing system commands, built-in commands like cd and exit, input and output redirection, and background execution using system calls like fork(), execvp(), and wait().
+The shell supports executing external commands found in /bin/ and /usr/bin/, such as ls, pwd, and cat. It also includes built-in commands like cd for changing directories and exit to close the shell. Additionally, users can redirect input using < and output using >, as well as run processes in the background using &.
 
-Features:
+Features
 
-Execute system commands available in /bin/ and /usr/bin/
+Support for executing system commands using execvp()
 
-Built-in commands: cd (change directory) and exit (close shell)
+Built-in commands: cd (change directory) and exit (terminate the shell)
 
-Input redirection using < and output redirection using >
+Input redirection using < to read from a file
 
-Background execution using &
+Output redirection using > to write to a file
 
-Installation and Compilation:
+Background process execution using &
 
+Error handling for invalid commands and file operations
+
+Installation and Compilation
 Prerequisites
 
-A Linux-based system (Ubuntu recommended)
-
-GCC compiler installed
-
-License
-
-This project is open-source and available under the MIT License.
+To run this shell, you need a Linux-based operating system (such as Ubuntu) and a GCC compiler installed. The shell uses standard system calls, so it may not work in Windows without a Unix-like environment such as WSL (Windows Subsystem for Linux).
