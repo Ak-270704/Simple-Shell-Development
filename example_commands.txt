@@ -1,0 +1,8 @@
+ls
+pwd
+whoami
+echo "Hello, world" > output.txt
+cat < output.txt
+ping google.com &
+cd ..
+exit
